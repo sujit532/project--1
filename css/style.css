@@ -1,0 +1,94 @@
+.parent{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.child-1{
+	width: 30%;
+	border: 2px solid #000;
+	margin: 1%;
+	padding: 2%;
+	box-shadow: 12px 12px 3px #ddd;
+
+}
+.child-2{
+	width: 60%;
+	border: 2px solid #ddd;
+	margin: 1%;
+	padding: 2%;
+	box-shadow: 3px 12px 15px #000;
+}
+
+.child-1>img{
+	display: block;
+	margin: 0 auto 0 auto;
+}
+a{
+	text-decoration: none;
+
+}
+h3{
+	color:#060100 ;
+}
+
+table{
+	width: 100%;
+	margin: 2%;	
+
+}
+table thead{
+	background: #3DBFA0 ;
+
+}
+thead tr th{
+	padding: 2%
+}
+tbody tr:nth-child(even){
+	background: #3DBFA0
+}
+tbody tr:nth-child(odd){
+	background: #cbb7df
+}
+tbody tr td{
+	padding: 1%;
+}
+
+/* mobile devices */
+@media only screen and (min-width: 320px) and (max-width: 767px){
+.child-1{
+	width: 90%;
+	border: 2px solid #000;
+	margin: 1%;
+	padding: 2%;
+	box-shadow: 12px 12px 3px #ddd;
+
+}
+.child-2{
+	width: 90%;
+	border: 2px solid #ddd;
+	margin: 1%;
+	padding: 2%;
+	box-shadow: 3px 12px 15px #000;
+}
+}
+/* tablet */
+@media only screen and (min-width: 320px) and (max-width: 767px){
+
+.child-1{
+	width: 45%;
+	border: 1px solid #ddd;
+	margin: 1%;
+	padding: 1%;
+	box-shadow: 0px 8px 8px -8px  #000;
+
+}
+.child-2{
+	width: 45%;
+	border: 1px solid #ddd;
+	margin: 1%;
+	padding: 1%;
+	box-shadow: 0px 8px 8px -8px #000;
+}
+}
+
